@@ -3,6 +3,9 @@ language: python
 os:
   - linux
   - osx
+  - windows
+
+osx_image: xcode10
 
 env:
   - TOXENV: py37
