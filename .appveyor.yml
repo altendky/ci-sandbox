@@ -12,5 +12,10 @@ environment:
     - TOXENV: py27
     - TOXENV: other
 
-build_script:
+install:
+  - pip install tox
+
+build: false
+
+test_script:
   - tox
