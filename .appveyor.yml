@@ -1,0 +1,16 @@
+image:
+  - Visual Studio 2017
+  - Ubuntu
+
+platform:
+  - x86
+  - x64
+
+environment:
+  matrix:
+    - TOXENV: py37
+    - TOXENV: py27
+    - TOXENV: other
+
+build_script:
+  - tox
