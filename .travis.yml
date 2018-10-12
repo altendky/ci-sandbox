@@ -10,13 +10,17 @@ sudo: true
 
 osx_image: xcode10
 
+python:
+  - 3.7
+  - 2.7
+
 env:
-  - TOXENV: py37
-  - TOXENV: py27
+  - TOXENV:
   - TOXENV: other
 
 install:
   - pip install tox
+  - pip install tox-travis
 
 script:
   - tox
