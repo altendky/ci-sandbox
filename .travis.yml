@@ -5,12 +5,13 @@ os:
   - osx
   - windows
 
+dist: xenial
+sudo: true
+
 osx_image: xcode10
 
 env:
   - TOXENV: py37
-    dist: xenial
-    sudo: true
   - TOXENV: py27
   - TOXENV: other
 
