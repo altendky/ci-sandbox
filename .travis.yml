@@ -6,6 +6,8 @@ os:
 
 env:
   - TOXENV: py37
+    dist: xenial
+    sudo: true
   - TOXENV: py27
   - TOXENV: other
 
